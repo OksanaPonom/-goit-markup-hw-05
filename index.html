@@ -63,7 +63,9 @@
       <section class="hero-bgd">
         <div class="container hero-box">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
-          <button class="button" type="button">Order Service</button>
+          <button class="button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -213,7 +215,6 @@
                   </a>
                 </li>
               </ul>
-
             </li>
             <li class="team-box-item card-set-item">
               <img
@@ -226,7 +227,7 @@
                 <h3 class="third-title">Tom Ford</h3>
                 <p class="paragraph">Frontend Developer</p>
               </div>
-               <ul class="list social-list team-social-block">
+              <ul class="list social-list team-social-block">
                 <li>
                   <a
                     class="social-link"
@@ -358,7 +359,7 @@
                 <h3 class="third-title">Daniel Wilson</h3>
                 <p class="paragraph">UI Designer</p>
               </div>
-               <ul class="list social-list team-social-block">
+              <ul class="list social-list team-social-block">
                 <li>
                   <a
                     class="social-link"
@@ -576,5 +577,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal is-hidden">
+        <button class="close-btn" aria-label="close" data-modal-close>
+          <svg width="8px" height="8px">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
