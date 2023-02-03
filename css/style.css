@@ -30,15 +30,14 @@
 /* ---------- */
 /* скидання маркерів, підкреслень, відступів */
 .list {
-  list-style: none;
-
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  list-style: none;
 }
 .link {
-  text-decoration: none;
   color: currentColor;
+  text-decoration: none;
 
   transition: color 250ms var(--timing);
 }
@@ -66,46 +65,45 @@ img {
 
 /* ----------*/
 body {
+  color: var(--text);
   font-family: var(--main-font);
   letter-spacing: 0.02em;
-
-  color: var(--text);
 }
 
 /* компоненти */
 
 .logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.33;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
 
   color: var(--dark);
+  font-weight: 800;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .logo-item {
   color: var(--primary-brand);
 }
 .button {
+
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  border: var(--primary-brand);
+  border-radius: 4px;
+
+  background-color: var(--primary-brand);
+  color: var(--light-on-dark);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
 
-  background-color: var(--primary-brand);
-  border: var(--primary-brand);
-  color: var(--light-on-dark);
-  border-radius: 4px;
-
   cursor: pointer;
-
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 32px;
-  padding-right: 32px;
 
   transition: background-color 250ms var(--timing);
 }
@@ -114,23 +112,23 @@ body {
   background-color: var(--pressed-state);
 }
 .secondary-title {
-  font-size: 36px;
-  line-height: 1.11;
-  text-transform: capitalize;
-  text-align: center;
-
-  color: var(--dark);
 
   margin-bottom: 72px;
+
+  color: var(--dark);
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .third-title {
-  font-size: 20px;
-  line-height: 1.2;
-
-  color: var(--dark);
 
   margin-bottom: 8px;
+
+  color: var(--dark);
+  font-size: 20px;
+  line-height: 1.2;
 }
 
 .paragraph {
@@ -140,16 +138,16 @@ body {
 
 .hidden {
   position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
+  border: 0;
 
   white-space: nowrap;
   clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 .section {
   padding-top: 120px;
@@ -158,10 +156,10 @@ body {
 
 .container {
   width: 1158px;
-  margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
+  margin-left: auto;
   padding-right: 15px;
+  padding-left: 15px;
 }
 
 .card-set {
@@ -184,9 +182,9 @@ body {
 }
 .logo-header {
   display: block;
+  margin-right: 76px;
   padding-top: 24px;
   padding-bottom: 24px;
-  margin-right: 76px;
 }
 .main-nav {
   display: flex;
@@ -201,15 +199,15 @@ body {
 }
 
 .main-nav-list-lihk {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
 
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
 
   color: var(--dark);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .current {
@@ -219,11 +217,11 @@ body {
 
 .current::after {
   content: '';
-  display: block;
 
   position: absolute;
-  left: 0;
   bottom: 0;
+  left: 0;
+  display: block;
 
   width: 100%;
   height: 4px;
@@ -240,15 +238,15 @@ body {
 }
 
 .address {
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--text);
-
-  text-decoration: none;
 
   padding-top: 24px;
   padding-bottom: 24px;
+  color: var(--text);
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+
+  text-decoration: none;
 
   transition: color 250ms var(--timing);
 }
@@ -259,18 +257,18 @@ body {
 
 /* -----HERO----- */
 .hero-bgd {
-  background-image: linear-gradient(var(--gradient), var(--gradient)),
-    url('../images/bgd-hero.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   max-width: 1440px;
   margin-right: auto;
   margin-left: auto;
-
-  background-color: var(--dark);
   padding-top: 188px;
   padding-bottom: 188px;
+
+  background-color: var(--dark);
+  background-image: linear-gradient(var(--gradient), var(--gradient)),
+    url('../images/bgd-hero.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .hero-box {
   display: flex;
@@ -278,16 +276,16 @@ body {
   align-items: center;
 }
 .main-title {
+  max-width: 494px;
+  margin-right: auto;
+  margin-bottom: 48px;
+  margin-left: auto;
+
+  color: var(--light-on-dark);
   font-size: 56px;
   line-height: 1.07;
 
-  color: var(--light-on-dark);
-
   text-align: center;
-  margin-bottom: 48px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 494px;
 }
 /* -----Benefits----- */
 .benefits-box {
@@ -298,10 +296,10 @@ body {
   flex-basis: calc(100% / 4);
 }
 .benefits-icon-block {
-  background-color: var(--light);
+  margin-bottom: 8px;
 
   padding: 24px 100px;
-  margin-bottom: 8px;
+  background-color: var(--light);
 }
 
 .benefits-icon {
@@ -322,8 +320,8 @@ body {
 /* ------Our Team----- */
 
 .team {
-  background-color: var(--light);
   padding-bottom: 110px;
+  background-color: var(--light);
 }
 
 .team-box {
@@ -332,9 +330,9 @@ body {
 }
 
 .team-box-item {
+  border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px var(--shadow1), 0px 1px 1px var(--shadow2),
     0px 2px 1px var(--shadow1);
-  border-radius: 0px 0px 4px 4px;
 }
 .team-card-name {
   padding-top: 32px;
@@ -345,21 +343,21 @@ body {
   display: flex;
   flex-wrap: nowrap;
   gap: 24px;
-
-  padding-left: 16px;
   padding-right: 16px;
   padding-bottom: 32px;
+
+  padding-left: 16px;
 }
 
 .social-link {
   display: flex;
-  width: 40px;
-  height: 40px;
   justify-content: center;
   align-items: center;
-  background-color: var(--primary-brand);
+  width: 40px;
+  height: 40px;
 
   border-radius: 50% 50%;
+  background-color: var(--primary-brand);
 
   transition: background-color 250ms var(--timing);
 }
@@ -383,9 +381,9 @@ body {
 }
 .customers-link {
   display: block;
+  padding: 16px 32px;
   border: 1px solid var(--subtle-text);
   border-radius: 4px;
-  padding: 16px 32px;
 
   transition: border 250ms var(--timing);
 }
@@ -396,8 +394,8 @@ body {
 }
 
 .customers-icon {
-  height: 56px;
   width: 104px;
+  height: 56px;
 
   fill: var(--subtle-text);
 
@@ -410,10 +408,10 @@ body {
 
 /* -----Footer------ */
 .footer-bgd {
-  background-color: var(--dark);
 
   padding-top: 100px;
   padding-bottom: 100px;
+  background-color: var(--dark);
 }
 .footer-block {
   display: flex;
@@ -423,21 +421,21 @@ body {
 }
 
 .paragraph-footer {
+  max-width: 264px;
   margin-top: 16px;
   color: var(--accent);
-  max-width: 264px;
 }
 
 .footer-social-media {
   margin-left: 120px;
 }
 .footer-social-media > .third-title {
+
+  margin-bottom: 16px;
   color: var(--light-on-dark);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-
-  margin-bottom: 16px;
 }
 .footer-social-block {
   display: flex;
@@ -447,10 +445,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--footer-social);
   width: 40px;
   height: 40px;
   border-radius: 50% 50%;
+  background-color: var(--footer-social);
 
   transition: background-color 250ms var(--timing);
 }
@@ -461,9 +459,9 @@ body {
 
 .footer-social-icon {
   display: block;
-  fill: var(--light);
   width: 24px;
   height: 24px;
+  fill: var(--light);
 }
 
 /* =====PORTFOLIO=====*/
@@ -472,14 +470,14 @@ body {
 }
 /* -----Filter----- */
 .button-filter {
-  background-color: var(--accent);
-  color: var(--primary-brand);
-  border: 1px solid var(--accent);
 
   padding-top: 12px;
+  padding-right: 24px;
   padding-bottom: 12px;
   padding-left: 24px;
-  padding-right: 24px;
+  border: 1px solid var(--accent);
+  background-color: var(--accent);
+  color: var(--primary-brand);
 
   transition: color 250ms var(--timing), background-color 250ms var(--timing),
     box-shadow 250ms var(--timing);
@@ -517,8 +515,8 @@ body {
 }
 .portfolio-link {
   display: block;
-  text-decoration: none;
   color: var(--text);
+  text-decoration: none;
 
   transition: box-shadow 250ms var(--timing);
 }
@@ -541,14 +539,14 @@ body {
   height: 100%;
 
   padding-top: 40px;
-  padding-left: 32px;
   padding-right: 32px;
+  padding-left: 32px;
   background-color: var(--primary-brand);
 
   color: var(--light);
+  transition: transform 250ms var(--timing);
 
   transform: translateY(100%);
-  transition: transform 250ms var(--timing);
 }
 
 .portfolio-link:hover .overlay,
@@ -565,21 +563,21 @@ body {
   border-top: none;
 }
 .secondary-title-portfolio {
+  margin-bottom: 8px;
+
+  color: var(--dark);
   font-size: 20px;
   line-height: 1.2;
   text-transform: capitalize;
-
-  color: var(--dark);
-  margin-bottom: 8px;
 }
 /* -----Modal----- */
 .backdrop {
   position: fixed;
-  z-index: 100;
   top: 0;
-  left: 0;
-  bottom: 0;
   right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
   width: 100%;
   height: 100%;
   background-color: var(--backdrop-modal);
@@ -602,19 +600,19 @@ body {
 
   width: 408px;
   height: 576px;
+  border-radius: 4px;
 
   background-color: var(--modal-background);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  transition: transform 250ms var(--timing), opacity 250ms var(--timing);
 
   /* transform: scale(1); */
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms var(--timing), opacity 250ms var(--timing);
 }
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.8);
   opacity: 0;
+  transform: translate(-50%, -50%) scale(0.8);
 }
 .close-btn {
   position: absolute;
@@ -624,9 +622,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
   width: 24px;
   height: 24px;
+  padding: 0;
 
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50% 50%;
